@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "headers",
+  "info": {
+    "name": "Header"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "cover_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Subtitle": {
+      "type": "string"
+    }
+  }
+}
